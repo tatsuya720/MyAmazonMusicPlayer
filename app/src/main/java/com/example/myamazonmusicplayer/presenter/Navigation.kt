@@ -1,6 +1,5 @@
 package com.example.myamazonmusicplayer.presenter
 
-import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
@@ -33,9 +32,6 @@ fun AppNavHost(
             LoginScreen(
                 navController = navController,
                 viewModel = hiltViewModel(),
-                onClickLogin = {
-                    Log.d("test", "onClick")
-                }
             )
         }
         composable(NavDestinationConst.HOME.route) {
